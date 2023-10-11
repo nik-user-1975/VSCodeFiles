@@ -103,7 +103,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* Плавные трансформации  */
   transition: all ease .35s;
 }
@@ -127,5 +127,104 @@ header {
   border-bottom: 2px solid #162938;
   margin: 32px 0;
 }
-
-/*  13.23   */
+.input-box label {
+	position: absolute;
+	top:50%;
+	left: 6px;
+	transform: translateY(-50%);
+	pointer-events: none;
+	color:#162928;
+	font-weight: 17px;
+	font-weight: 500;
+	transform: ale ease .45s;
+}
+.input-box input{
+	background: transparent;
+	width: 100%;
+	height: 100%;
+	font-size: 17px;
+	font-weight: 600;
+	color:#162928;
+padding: 0 30px 0 6px;
+}
+.input-box .icon {
+	position:absolute;
+	right: 9px;
+	font-size: 19px;
+	color:#162938;
+	line-height: 55px;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+	top: -3px;
+}
+.check {
+	font-size: 15px;
+	font-weight: 500;
+	color: #162938;
+	margin: -14px 0 15px;
+	display: flex;
+	justify-content: space-between;
+}
+.check label .input-box {
+	margin-right: 5px;
+	accent-color: #162838;
+}
+.check a {
+	color: #162838;
+}
+.check a:hover{
+	text-decoration: underline;
+}
+.main-btn {
+	background: #162838;
+	width: 100%;
+	height: 43;
+	border-radius: 8px;
+	font-size: 17px;
+	font-weight: 600;
+	color: #fff;
+	cursor: pointer;
+}
+.register {
+	text-align: center;
+	color:#162838;
+	font-size:15px;
+	font-weight: 500;
+	margin: 30px 0 10px;
+}
+.register p a {
+  font-weight: 600;
+	color: #162838;
+}
+.register p a:hover{
+	text-decoration: underline;
+}
+.close-icon {
+	position: absolute;
+	left:0;
+	top:0;
+	width: 44px;
+	background: #162838;
+	color: #FFF;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 32px;
+	z-index: 1;
+	border-bottom-right-radius: 15px;
+	cursor: pointer;
+}
+.container .man-box.login {
+	/* display: none; */
+	transition: transform .20s ease;
+	transform: translateX(10px);
+}
+.container .man-box.register{
+	position: absolute;
+	transform: translateX(500px);
+	transition:none;
+}
+.bx-x {
+}
